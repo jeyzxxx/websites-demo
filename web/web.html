@@ -1,0 +1,377 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzG0sAKdeQ1G5o/k47L0OX+i5I+ksaVRYActiveTz0zGrnG0bQf6Q" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: ;
+            color: #333;
+        }
+
+
+#ratio-confirmation {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+  }
+        header {
+            background-color: #E77471;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: ;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        section p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hero {
+            background-image: url("C:\Users\JESSA VILLACRUSIS\Downloads\Red Ribbon, SM Seaside City Cebu, Philippines! - Shopping Malls and Mall Store Directory Philippines.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #990000;
+        }
+
+        .bakeshop-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .bakeshop {
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .bakeshop img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .bakeshop h3 {
+            margin-bottom: 5px;
+        }
+
+        .bakeshop p {
+            margin-bottom: 10px;
+        }
+
+        .bakeshop a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .bakeshop a:hover {
+            background-color: #555;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 30%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .audio-container {
+            margin-bottom: 20px;
+        }
+
+        .audio-container audio {
+            width: 100%;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #990000;
+        }
+    </style>
+</head>
+<body>
+    
+    <div style="text-align:center;"> <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\redribbon.png-removebg-preview (1).png"> </div>
+   
+    
+        <h1 style="font-size:50px; text-align:center;">Philippine Bakeshop Delights</h1>
+   
+<div style="position:relative; width:fit-content; margin:20px auto;">
+  <div style="background-color:#990000; color:white; padding:10px 20px; text-align:center;">
+   WELCOME TO OUR WEBSITES!!
+  </div>
+
+<p style="text-align:center;">Hey there! Welcome to Sweet website's!  We're so glad you're here.<br>here's a amazing <b>bakeshop in the philippines </b>
+ to share with you.<br>Take a look around and see what catches your eye – we think you'll love it! </p>
+ 
+  <nav>
+        <a href="#home"><b><u>Home</u></b></a>
+        <a href="#bakeshops"><b><u>Bakeshops</u></b></a>
+        <a href="#gallery"><b><u>Gallery</u></b></a>
+        <a href="#video"><b><u>Video</u></b></a>
+        <a href="#audio"><b><u>Audio</u></b></a>
+        <a href="#contact"><b><u>Contact us</u></b></a>
+   </nav>
+   
+    <section class="hero">
+        <h2>Explore the Sweetest Treats in the Philippines</h2>
+        <p>Discover the best bakeshops in the Philippines, renowned for their delicious cakes, pastries, and other baked goods.</p>
+        <a href="#bakeshops" class="button">Browse Bakeshops</a>
+    </section>
+
+    <main>
+        <section id="bakeshops">
+            <h2>Featured Bakeshops</h2>
+            <div class="bakeshop-list">
+                <div class="bakeshop">
+                    <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\Red Ribbon, SM Seaside City Cebu, Philippines! - Shopping Malls and Mall Store Directory Philippines.jpg" alt="Red Ribbon">
+                    <h3>Red Ribbon</h3>
+                    <p>A beloved Filipino bakery chain known for its classic cakes and pastries.  </p>
+                    <a href="https://www.redribbonbakeshop.com.ph" target="_blank">Visit Website</a>
+                </div>
+
+                <div class="bakeshop">
+                    <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\GOLDILOCKS SM Seaside City, Cebu Philippines - Shopping Malls and Mall Store Directory Philippines.jpg" alt="Goldilocks">
+                    <h3>Goldilocks</h3>
+                    <p>A household name in the Philippines, offering a wide variety of cakes, pastries, and bread.</p>
+                    <a href="https://www.goldilocks.com.ph" target="_blank">Visit Website</a>
+                </div>
+
+                <div class="bakeshop">
+                    <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\Cafe Mary Grace, Eastwood Mall.jpg"alt="Mary Grace">
+                    <h3>Cafe Mary Grace</h3>
+                    <p>A cozy cafe known for its fresh pastries, hearty meals, and "Goodness of Home" ambiance.</p>
+                    <a href="https://www.marygracecafe.com" target="_blank">Visit Website</a>
+                </div>
+
+                <div class="bakeshop">
+                    <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\@Tour Les Jours Kr@.jpg" alt="Tous les Jours">
+                    <h3>Tous les Jours</h3>
+                    <p>A French-Asian inspired bakery offering a wide selection of breads, pastries, and coffee.</p>
+                    <a href="https://www.touslesjours.com.ph" target="_blank">Visit Website</a>
+                </div>
+
+                <div class="bakeshop">
+                    <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\becky.jpg" alt="Becky's Kitchen">
+                    <h3>Becky's Kitchen</h3>
+                    <p>A classic Manila bakeshop famous for its homemade cakes, cupcakes, and brownies.</p>
+                    <a href="https://www.facebook.com/beckyskitchenmanila" target="_blank">Visit Facebook Page</a>
+                </div>
+
+                <div class="bakeshop">
+                    <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\13734833_1260257010654186_1490696706_n.webp" alt="Conti's">
+                    <h3>Conti's Bakeshop & Restaurant</h3>
+                    <p>A popular chain offering a wide selection of cakes, pastries, and savory dishes.</p>
+                    <a href="https://www.contis.ph" target="_blank">Visit Website</a>
+                </div>
+
+                <div class="bakeshop">
+                    <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\672A5401.webp" alt="Dylan Patisserie">
+                    <h3>Dylan Patisserie</h3>
+                    <p>Known for its elegant ambiance and delectable French-inspired pastries with Filipino twists.</p>
+                    <a href="https://dylanpatisserie.com" target="_blank">Visit Website</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Bakeshop Gallery</h2>
+            <div class="gallery">
+                <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\6c31201a-d2c4-4927-8577-183db2eb5caf.jpg"alt="Cake Decoration">
+                <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\090591d3-b43f-42de-a82e-e079808cce6a.jpg">
+                <img src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\download (11).jpg" alt="bakery interior">
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>FLAVOR OF CAKE'S</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\40 Types of Cake Flavors Name _ Different Cake Flavors Name _ Cake Flavours Name List _.mp4"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="audio">
+            <h2>CLICK & TREAT YOUR EARS!!</h2>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\JESSA VILLACRUSIS\Desktop\pic\blue instrumental.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance?  We'd love to hear from you!  Contact us through the form below or by email at philippine.bakeshops@example.com.</p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message:</label>
+               
+ <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+  <label><input type="checkbox" name="newsletter" value="subscribe"><b> Subscribe to our Websites</b></label><br>
+
+ <label>
+    <input type="radio" name="confirm" value="yes" required> Yes, I want to submit
+  </label><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Philippine Bakeshop Delights - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Example: Add a smooth scroll to the navigation links
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+    </script>
+
+
